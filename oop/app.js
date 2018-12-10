@@ -5,8 +5,16 @@ function Person(name,age,sex,){
 };
 
 function Job(title,description,salary){
+    this.title=title;
+    this.description=description;
 
-}
+    this.salary=function (){
+        console.log(`${title} and ${salary}`)
+    };
+
+};
+var deo=new Job('manager',"intelligent",5000)
+console.log(deo.salary())
 
 var dee=new Person('dee',14,'male');
 console.log(dee.name,dee.age)
